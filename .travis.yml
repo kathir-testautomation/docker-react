@@ -7,3 +7,18 @@ before_install:
 
 script:
   - docker run catchkathirk/docker-react npm run test -- --coverage
+
+##AWS deploy commands
+#
+#deploy:
+#  provider: elasticbeanstalk
+#  region: "us-west-2 (get from AWS)"
+#  app: "docker-react (get from AWS)"
+#  env: "Docker-env (get from AWS)"
+#  bucket_name: "url get from AWS"
+#  bucket_path: "docker-react (get from AWS)"
+#  #deploy when changes in master
+#  on:
+#    branch: master
+#  access_key_id: "get from AWS IAM user profile"
+#  secret_access_key: "get from AWS IAM user profile"
